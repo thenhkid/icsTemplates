@@ -1,0 +1,1 @@
+define(["jquery","central-graphic"],function(e,t){var n={home:function(){t.init()}};return n});
