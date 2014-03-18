@@ -104,6 +104,9 @@ h3 {
 .primary-nav .navbar-nav li:last-child > a {
   border-right: 0;
 }
+.primary-nav .icon-bar {
+  background-color: #000;
+}
 .navbar-brand,
 .navbar-brand:hover {
   color: #ffffff;
@@ -618,6 +621,7 @@ h4 {
 .app-page .test-section .gs4-image {
   position: absolute;
   margin-top: 30px;
+  bottom: -30px;
 }
 .app-page .test-section .media > .pull-left {
   margin-right: 20px;
@@ -830,4 +834,37 @@ h4 {
   left: 50%;
   margin-left: -1px;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    max-width: 280px;
+  }
+  .navbar-brand .logo-image {
+    width: 100%;
+  }
+  .primary-nav .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .primary-nav .navbar-nav > li.featured-nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .primary-nav .navbar-collapse.in {
+    border-top: 1px solid #c3dbef;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .primary-nav .navbar-right {
+    width: 100%;
+    box-sizing: content-box;
+    float: none !important;
+    border-top: 1px solid #c3dbef;
+    margin-right: 0;
+    clear: both;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+  }
 }
