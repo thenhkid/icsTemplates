@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- main css compiled from main.less -->
+<link rel="stylesheet" href="css/admin/main.css?v=a3">
+
+<!-- default theme -->
+<link rel="stylesheet" href="css/themes/theme-default.css">
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/admin/ie.css">
+<![endif]-->
+
+<!-- moderizer: for ie8 compatibility -->
+<script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script data-main="js/admin/main" src="js/vendor/require.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+ 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<div class="wrap">
+	<!-- Header -->
+	<header id="header" class="header" role="banner">
+		<!-- Primary Nav -->
+		<!--role="navigation" used for accessibility -->
+			<nav class="navbar primary-nav" role="navigation">
+				<div class="navbar-header">
+					<a href="" class="navbar-brand" title="{company name}">
+					<!--
+						<img src="img/health-e-link/img-health-e-link-logo.png" class="logo" alt="Health-e-Link Logo"/>
+						Required logo specs:
+						logo width: 125px
+						logo height: 30px
+
+						Plain text can be used without image logo
+
+						sprite can be used with class="logo":
+					-->
+						<span class="logo" alt="{Company Name Logo}"></span>
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="" title="Organizations">Organizations</a><span class="indicator-active arrow-up"></span></li>
+					<li><a href="" title="Configurations">Configurations</a></li>
+					<li><a href="" title="Message Type Library">Message Type Library</a></li>
+					<li><a href="" title="Scheduler">Scheduler</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="secondary-nav">
+					<li><a href="" title="Log out">Log out</a></li>
+				</ul>
+			</nav>
+		<!-- // End Primary Nav -->
+	</header>
+	<!-- End Header -->
+
+	<!-- Actions Nav -->
+	<nav class="navbar navbar-default actions-nav" role="navigation">
+		<div class="navbar-header">
+			<h1 class="section-title navbar-brand"><a href="" title="Section Title" class="unstyled-link">Section Title</a></h1>
+		</div>
+		<ul class="nav navbar-nav navbar-right navbar-actions">
+			<li><a href="" title="Save"><span class="glyphicon glyphicon-ok icon-stacked"></span> Save</a></li>
+			<li><a href="" title="Save &amp; Close<"><span class="glyphicon glyphicon-floppy-disk icon-stacked"></span> Save &amp; Close</a></li>
+			<li><a href="" title="Delete"><span class="glyphicon glyphicon-remove icon-stacked"></span>Delete</a></li>
+			<li><a href="" title="Cancel"><span class="glyphicon icon-stacked custom-icon icon-cancel"></span>Cancel</a></li>
+		</ul>
+	</nav>
+	<!-- End Actions Nav -->
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+
+			<!-- Secondary Nav -->
+			<aside class="secondary">
+				<nav class="secondary-nav" role="navigation">
+					<ul class="nav nav-pills nav-stacked">
+						<li>
+							<a href="">Edit Organization</a>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="" title="Details">Details</a></li>
+								<li class="active"><a href="" title="Configurations">Configurations</a></li>
+								<li><a href="" title="Providers">Providers</a></li>
+								<li><a href="" title="System Users">System Users</a></li>
+								<li><a href="" title="Brochures">Brochures</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="" title="Organization Subnav">Sub Navigation One</a>
+							<ul class="nav nav-pills nav-stacked">
+								<li class="active"><a href="" title=""><strong>Step 1:</strong><br/>Details</a></li>
+								<li><a href="?configurations-choose-fields" title=""><strong>Step 2:</strong><br/>Field Mappings</a></li>
+								<li><a href="" title=""><strong>Step 3:</strong><br/>Data Translations</a></li>
+								<li><a href="" title=""><strong>Step 4:</strong><br/>Connections</a></li>
+								<li><a href="" title=""><strong>Step 5:</strong><br/>Scheduling</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="" title="Organization Subnav">Sub Navigation Two</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- // End Secondary Nav -->
+
+
+			<div class="main clearfix" role="main">
+
+				<!-- Subnav (if needed) -->
+				<nav class="sub-nav" role="navigation">
+					<ul class="nav nav-pills" >
+						<li class="active">
+							<a href="" title="">
+								<span class="badge">1</span>
+								Details
+							</a>
+						</li>
+						<li>
+							<a href="" title="">
+								<span class="badge">2</span>
+								Field Mappings
+							</a>
+						</li>
+						<li class="disabled">
+							<a href="" title="">
+								<span class="badge">3</span>
+								Data Translations
+							</a>
+						</li>
+						<li class="disabled">
+							<a href="" title="">
+								<span class="badge">4</span>
+								Connections
+							</a>
+						</li>
+						<li class="disabled">
+							<a href="" title="">
+								<span class="badge">5</span>
+								Scheduling
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="col-md-12">
+
+					<div class="alert alert-success"><strong>Success!</strong> New User Added!</div>
+					<div class="alert alert-info"><strong>Info:</strong> You can now add more users!</div>
+					<div class="alert alert-warning"><strong>Warning!</strong> User added but something went wrong!</div>
+					<div class="alert alert-danger"><strong>Error!</strong> User not added!</div>
+
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Modal Examples</h3>
+						</div>
+						<div class="panel-body">
+							<a href="img/test.jpg" data-toggle="modal" data-target="#mediaModal" class="media-modal" data-title="Image Example">Image Modal small</a><br/>
+							<a href="img/test-med.jpg" data-toggle="modal" data-target="#mediaModal" class="media-modal" data-title="Image Example">Image Modal medium</a><br/>
+							<a href="img/test-large-h.jpg" data-toggle="modal" data-target="#mediaModal" class="media-modal" data-title="Image Example">Image Modal large</a><br/>
+							<a href="img/test-pdf.pdf" data-toggle="modal" data-target="#mediaModal" class="media-modal" data-title="PDF Example">Pdf Modal</a>
+						</div>
+					</section>
+
+
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">File form field</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-group">
+								<label for="exampleInputFile">File input <span data-container="body" class="badge badge-help" data-placement="top" data-toggle="popover" data-content="This is the status">?</span>
+
+                            <span class="badge badge-help"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">?</span></label>
+								<input type="file" id="exampleInputFile">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Fixed Width Columns</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-container scrollable">
+								<table class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th style="width:100px; min-width:100px">Message Type</th>
+											<th style="width:300px; min-width:300px;">Type</th>
+											<th style="width:400px; min-width:400px;">Date</th>
+											<th>Connections</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Combined Table</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-container scrollable">
+								<table class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th style="width:500px; min-width:500px">Message Type</th>
+											<th>Type</th>
+											<th>Date</th>
+											<th>Connections</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-section-title">
+											<td colspan="4">
+												<strong>Bucket 1 (Sender Information)</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr class="table-section-title">
+											<td colspan="4">
+												<strong>Bucket 2 (Recipient Information)</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Combined Table</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-container scrollable">
+								<table class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th>Measurement Date</th>
+											<th>Measurement Type</th>
+											<th>Blood Pressure (mmHg)</th>
+											<th>Pulse</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2014-01-30</td>
+											<td>9:32:22</td>
+											<td>113/80</td>
+											<td>82</td>
+											<td><a href="" title="">Edit</a> <a href="" title="">Delete</a></td>
+										</tr>
+										<tr>
+											<td>2014-01-30</td>
+											<td>9:32:22</td>
+											<td>113/80</td>
+											<td>82</td>
+											<td><a href="" title="">Edit</a> <a href="" title="">Delete</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-md-6">
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Configuration Detail - New Data Translations</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-container">
+								<form role="form">
+									<div class="form-group">
+										<label for="fieldNumber">Field Number</label>
+										<select id="fieldNumber" class="form-control half">
+											<option value="comboBox">ComboBox</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="macro">Macro</label>
+										<select id="macro" class="form-control half">
+											<option value="comboBox">ComboBox</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="crosswalk">Crosswalk</label>
+										<select id="fieldNumber" class="form-control half">
+											<option value="comboBox">ComboBox</option>
+										</select>
+										<span class="form-group-note"><a href="#crosswalkModal" class="" data-toggle="modal">Add / Edit Crosswalks</a></span>
+									</div>
+									<div class="form-group">
+										<label>Pass/Clear Error</label>
+										<div>
+											<label class="radio-inline">
+												<input type="radio" > Pass Error
+											</label>
+											<label class="radio-inline">
+												<input type="radio" > Clear Error
+											</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="fieldA">Field A</label>
+												<input id="fieldA" class="form-control" type="text" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="fieldB">Field B</label>
+												<input id="fieldB" class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="constant1">Constant 1</label>
+												<input id="constant1" class="form-control" type="text" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="constant2">Constant 2</label>
+												<input id="constant2" class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+										<input type="submit" alt="Save" title="Save" value="Save" class="btn btn-primary"/>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-md-6">
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Configuration Detail - Existing Translations</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-container scrollable">
+								<table class="table table-striped table-hover responsive">
+									<thead>
+										<tr>
+											<th>Field #</th>
+											<th>Macro</th>
+											<th>Crosswalk</th>
+											<th>Pass/Clear Error</th>
+											<th>Field A</th>
+											<th>Field B</th>
+											<th>Constant 1</th>
+											<th>Constant 2</th>
+											<th>Process Order</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>3</td>
+											<td>Date 3 kskjs jnjd jkd kj jskj kd</td>
+											<td>Date 3 kskjs jnjd jkd kj</td>
+											<td>P</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<select class="form-control">
+													<option>1</option>
+												</select>
+											</td>
+											<td>
+												<a href="" title="" alt="Remove Field" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span></a>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Date 3</td>
+											<td></td>
+											<td>P</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<select class="form-control">
+													<option>1</option>
+												</select>
+											</td>
+											<td>
+												<a href="" title="" alt="Remove Field" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span></a>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Date 3</td>
+											<td></td>
+											<td>P</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<select class="form-control">
+													<option>1</option>
+												</select>
+											</td>
+											<td>
+												<a href="" title="" alt="Remove Field" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span></a>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Date 3</td>
+											<td></td>
+											<td>P</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<select class="form-control">
+													<option>1</option>
+												</select>
+											</td>
+											<td>
+												<a href="" title="" alt="Remove Field" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="crosswalkModal" role="dialog" tabindex="-1" aria-labeledby="Edit Crosswalks" aria-hidden="true" aria-describedby="Add, edit and delete crosswalks">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3 class="panel-title">Configuration Detail - Crosswalks</h3>
+					</div>
+					<div class="modal-body">
+						<button class="btn btn-primary btn-sm pull-right " style="margin-top:-7px; margin-right:-8px">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+						<table class="table table-striped table-hover">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Date</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Gender</td>
+									<td>8/20/2013</td>
+									<td>
+										<a href="" class="btn btn-link"><span class="glyphicon glyphicon-search"></span> View</a> 
+										<a href="" title="" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Gender</td>
+									<td>8/20/2013</td>
+									<td>
+										<a href="" class="btn btn-link"><span class="glyphicon glyphicon-search"></span> View</a> 
+										<a href="" title="" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- media modal skeleton -->
+	<div class="modal fade modal-media" id="mediaModal" role="dialog" tabindex="-1" aria-labeledby="" aria-hidden="true" aria-describedby="">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="panel-title"></h3>
+				</div>
+				<div class="modal-body">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-content"><span class="footer-brand">Health-e-Link Administrator</span> | <span class="copyright">&copy; Health-e-link</span></div>
+	</footer>
+
+</div>
+<!-- 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+-->
+</body>
+</html>
