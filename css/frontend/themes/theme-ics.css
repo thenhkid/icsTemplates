@@ -666,12 +666,11 @@ h2 + h3 {
 .app-page .test-section .gs4-image {
   position: absolute;
   margin-top: 30px;
-  bottom: -30px;
+  top: 20px;
 }
 @media (max-width: 991px) {
   .app-page .test-section .gs4-image {
     width: 250px;
-    top: 100px;
     left: 0px;
   }
 }
@@ -689,6 +688,12 @@ h2 + h3 {
 }
 .app-page .share-section h3 {
   margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .app-page .share-section {
+    background-image: none;
+    padding: 40px 0;
+  }
 }
 .app-display {
   text-align: center;
