@@ -11,18 +11,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- main css compiled from main.less -->
-<link rel="stylesheet" href="css/main.css?v=2">
+<link rel="stylesheet" href="css/frontend/main.css?v=2">
 
 <!-- default theme -->
-<link rel="stylesheet" href="css/themes/theme-ics.css">
+<link rel="stylesheet" href="css/frontend/themes/theme-ics.css">
 
 <!--[if lt IE 9]>
-	<link rel="stylesheet" href="css/ie.css">
+	<link rel="stylesheet" href="css/frontend/ie.css">
 <![endif]-->
 
 <!-- moderizer: for ie8 compatibility -->
 <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<script data-main="js/main" src="js/vendor/require.js"></script>
+<script data-main="js/frontend/main" src="js/vendor/require.js"></script>
 </head>
 <body id="my-bp-coach" class="app-page">
 
@@ -40,7 +40,7 @@
 				<div class="container">
 					<div class="navbar-header">
 						<a href="" class="navbar-brand" title="{company name}">
-							<img src="img/icsciences-logo.png" class="logo-image" alt="ICSciences"/>
+							<img src="img/frontend/icsciences-logo.png" class="logo-image" alt="ICSciences"/>
 						</a>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 							<span class="sr-only">Toggle navigation</span>
@@ -67,32 +67,31 @@
 		<!-- // End Primary Nav -->
 	</header>
 	<!-- End Header -->
-
-
 	<!-- Central Graphic -->
 	<div class="central-graphic">
 		<div class="container">
-		<hgroup class="central-graphic-heading">
-			<h1>Take the pressure out of hypertension</h1>
-		</hgroup>
+			<hgroup class="central-graphic-heading hidden-xs">
+				<h1>Take the pressure out of hypertension</h1>
+			</hgroup>
 
-		<div class="app-display col-sm-8 col-sm-offset-2">
-			<div class="pad">
-				<img src="img/my-bp-coach-icon-large.png"/>
-				<hgroup>
-					<h2>My BP Coach</h2>
-					<span class="note">An m|d-Health Smart Care App</span>
-				</hgroup>
-				<p>Monitoring hypertension is convenient with “My BP Coach”, an I.C. Sciences m|d-Health Smart Care App.  Simply Connect to any supported monitoring device with Bluetooth </p>
-				<p>
-				<a href="" title="" class="app-badge google-play-badge ir">Get it on Google Play</a><a href="" title="" class="ir app-badge app-store-badge">Available on the App Store</a></p>
+			<div class="app-display col-sm-8 col-sm-offset-2">
+				<div class="pad">
+					<img src="img/frontend/my-bp-coach-icon-large.png"/>
+					<hgroup>
+						<h2>My BP Coach</h2>
+						<span class="note">An m|d-Health Smart Care App</span>
+					</hgroup>
+					<p>Monitoring hypertension is convenient with “My BP Coach”, an I.C. Sciences m|d-Health Smart Care App.  Simply Connect to any supported monitoring device with Bluetooth </p>
+					<p>
+					<a href="" title="" class="app-badge google-play-badge ir">Get it on Google Play</a><a href="" title="" class="ir app-badge app-store-badge">Available on the App Store</a></p>
+				</div>
 			</div>
 		</div>
-
 	</div>
-	</div>
+<div class="main-container" role="main">
 
-	<div class="content-container">
+
+
 	<!-- Main Content -->
 	<div class="page-section app-breakdown">
 		<div class="container">
@@ -197,7 +196,7 @@
 
 	<div class="page-section track-section">
 		<div class="container" >
-			<img src="img/img-i-health.png" class="i-health-image"/>
+			<img src="img/frontend/img-i-health.png" class="i-health-image hidden-xs"/>
 			<div class="row">
 				<div class="col-sm-7">
 					<h2><strong>Track</strong> Your Blood Pressure</h2>
@@ -210,22 +209,22 @@
 
 	<div class="test-section">
 		<div class="container" style="position:relative; overflow:hidden;">
-			<img src="img/my-bp-coach-gs4.png" class="gs4-image" alt="Samsung GS4: My BP Coach" />
+			<img src="img/frontend/my-bp-coach-gs4.png" class="gs4-image hidden-xs" alt="Samsung GS4: My BP Coach" />
 			<div class="row">
-				<div class="col-sm-6 col-sm-offset-6 content-area">
+				<div class="col-md-6 col-sm-8 col-sm-offset-4 col-md-offset-6 content-area">
 			<h2><strong>Test</strong> Your Results Over Time</h2>
 				<ul class="media-list">
 					<li class="media">
 						<span class="pull-left feature-icon icon-reports"></span>
 						<div class="media-body">
-							<h3>Generate Health Reports with Comprehensive Metrics</h3>
+							<h3 class="media-heading">Generate Health Reports with Comprehensive Metrics</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="" title="">Learn More...</a></p>
 						</div>
 					</li>
 					<li class="media">
 						<span class="pull-left feature-icon icon-medications"></span>
 						<div class="media-body">
-							<h3>Setup Medication Remiders</h3>
+							<h3 class="media-heading">Setup Medication Remiders</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="" title="">Learn More...</a></p>
 						</div>
 					</li>
@@ -233,7 +232,7 @@
 					<li class="media">
 						<span class="pull-left feature-icon icon-content"></span>
 						<div class="media-body">
-							<h3>Access Personalized Health Content</h3>
+							<h3 class="media-heading">Access Personalized Health Content</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="" title="">Learn More...</a></p>
 						</div>
 					</li>
@@ -241,7 +240,7 @@
 					<li class="media">
 						<span class="pull-left feature-icon icon-goals"></span>
 						<div class="media-body">
-							<h3>Set Personal Goals</h3>
+							<h3 class="media-heading">Set Personal Goals</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="" title="">Learn More...</a></p>
 						</div>
 					</li>
@@ -259,7 +258,7 @@
 				<h2><strong>Share</strong> Data With Your Care Team</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
 
-				<h3>Patient / Doctor Dashboard</h3>
+				<h3 class="hidden-xs">Patient / Doctor Dashboard</h3>
 				</div>
 			</div>
 		</div>
