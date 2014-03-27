@@ -758,6 +758,9 @@ h1 + h2, h2 + h3
 }
 
 .app-feature-table {
+	max-width: 940px;
+	margin-left:auto;
+	margin-right: auto;
 	margin-bottom: 0;
 	tr {
 		border-bottom: 0;
@@ -806,6 +809,30 @@ h1 + h2, h2 + h3
 			border:0px solid #ff0000;
 		}
 	}
+}
+
+#team{
+
+	.featured-item {
+		margin-bottom:40px;
+		padding-bottom:40px;
+		border-bottom:1px solid @gray-very-light;
+
+		.gallery-image {
+			margin-bottom:0;
+		}
+
+		h3 {
+			margin-top:0;
+			margin-bottom:0;
+		}
+
+		hgroup {
+			margin-bottom: 10px;
+		}
+	}
+
+
 }
 
 
@@ -896,6 +923,30 @@ h1 + h2, h2 + h3
 
 	&.icon-medication-monitoring {
 		.sp-ics(50px, 50px, -820px, -120px)
+	}
+
+	&.icon-track {
+		.sp-ics(50px, 50px, -700px, -120px)
+	}
+
+	&.icon-engage {
+		.sp-ics(50px, 50px, -700px, -250px)
+	}
+
+	&.icon-organize {
+		.sp-ics(50px, 50px, -760px, -250px)
+	}
+
+	&.icon-learn {
+		.sp-ics(50px, 50px, -820px, -250px)
+	}
+
+	&.icon-charts {
+		.sp-ics(50px, 50px, -880px, -250px)
+	}
+
+	&.icon-dashboard {
+		.sp-ics(50px, 50px, -940px, -250px)
 	}
 }
 
@@ -1022,8 +1073,14 @@ h1 + h2, h2 + h3
 	height:100%;
 }
 
+.gallery{
 
+}
 
+.gallery-image {
+	width:100%;
+	margin-bottom: 20px;
+}
 // responsive
 
 

@@ -37,19 +37,22 @@ require(['jquery', 'templating', 'page-scripts', 'bootstrap'], function ($, Temp
 
 	$("[data-toggle=popover]").popover();
 
-	// close other popovers in app feature list
-	$(".app-feature-table [data-toggle=popover]").on('click', function() {
-		$(".app-feature-table [data-toggle=popover]").not(this).popover('hide');
-	});
-
 	// close other popovers on click off
 	$('body').on('click', function (e) {
 		//only buttons
-		if ($(e.target).data('toggle') !== 'popover'
-			&& $(e.target).parents('.popover.in').length === 0) { 
+		if ($(e.target).data('toggle') !== 'popover' && $(e.target).parents('.popover.in').length === 0) {
 			$('[data-toggle="popover"]').popover('hide');
 		}
 	});
+
+
+
+	// close other popovers in app feature list
+	$("[data-toggle=popover]").on('click', function() {
+		$("[data-toggle=popover]").not(this).popover('hide');
+	});
+
+
 
 	// page scripts
 	if (typeof PageScripts[pageId] === 'function')
