@@ -722,6 +722,9 @@ h2 + h3 {
   }
 }
 .app-feature-table {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
 }
 .app-feature-table tr {
@@ -770,6 +773,21 @@ h2 + h3 {
   .app-feature-table.table-responsive {
     border: 0px solid #ff0000;
   }
+}
+#team .featured-item {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #efefef;
+}
+#team .featured-item .gallery-image {
+  margin-bottom: 0;
+}
+#team .featured-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#team .featured-item hgroup {
+  margin-bottom: 10px;
 }
 .product-list .item-image > img {
   margin: auto;
@@ -871,6 +889,54 @@ h2 + h3 {
   height: 50px;
   background-image: url('../../../img/frontend/sp-ics.png');
   background-position: -820px -120px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.feature-icon.icon-track {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../../img/frontend/sp-ics.png');
+  background-position: -700px -120px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.feature-icon.icon-engage {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../../img/frontend/sp-ics.png');
+  background-position: -700px -250px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.feature-icon.icon-organize {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../../img/frontend/sp-ics.png');
+  background-position: -760px -250px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.feature-icon.icon-learn {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../../img/frontend/sp-ics.png');
+  background-position: -820px -250px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.feature-icon.icon-charts {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../../img/frontend/sp-ics.png');
+  background-position: -880px -250px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.feature-icon.icon-dashboard {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../../img/frontend/sp-ics.png');
+  background-position: -940px -250px;
   background-repeat: no-repeat;
   display: inline-block;
 }
@@ -996,6 +1062,10 @@ h2 + h3 {
   left: 50%;
   margin-left: -1px;
   height: 100%;
+}
+.gallery-image {
+  width: 100%;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   .navbar-brand {

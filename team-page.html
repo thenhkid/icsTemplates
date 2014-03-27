@@ -24,7 +24,7 @@
 <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <script data-main="js/frontend/main" src="js/vendor/require.js"></script>
 </head>
-<body id="content-template" class="content-page generic-page">
+<body id="team" class="content-page generic-page">
 
 <!--[if lt IE 7]>
  	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -69,31 +69,59 @@
 	<!-- End Header -->
 
 
+
+
+
 <div class="container main-container" role="main">
 
-		<div class="row">
+		<div class="row ">
 			<div class="col-sm-12">
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Library</a></li>
-					<li class="active">Data</li>
-				</ol>
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
 			</div>
 		</div>
 
 		<div class="row">
 			<aside class="col-md-2 col-sm-3 secondary hidden-xs">
-				<div class="fixed-region affix-top">
+				<div class="fixed-region affix-top" style="">
+					<div class="module sidebar-module">
+						<nav class="secondary-nav" role="navigation">
+							<ul class="nav nav-stacked">
+								<li>
+									<a href="">Edit Organization</a>
+									<div id="active-page-nav">
+										<ul class="nav">
+											<li class="active"><a href="#one" title="Details">Details</a></li>
+											<li class=""><a href="#two" title="Configurations">Configurations</a></li>
+											<li class=""><a href="#three" title="Providers">Providers</a></li>
+											<li class=""><a href="#four" title="System Users">System Users</a></li>
+											<li class=""><a href="#five" title="Brochures">Brochures</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="" title="Organization Subnav">Organization Subnav</a>
+								</li>
+								<li>
+									<a href="" title="Organization Subnav">Organization Subnav</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
 					<div class="module sidebar-module">
 						<dl class="vcard info-list">
 							<dt>Contact Us By Phone</dt>
-							<dd class="tel">(508) 721-1977</dd>
+							<dd class="tel">(555) 555-5555</dd>
 
 							<dt>Contact Us By Fax</dt>
-							<dd class="tel">(508) 721-1978</dd>
+							<dd class="tel">(555) 555-5555</dd>
 
 							<dt>Contact Us By Email</dt>
-							<dd class="email"><a href="" title="">info@health-e-link.net</a></dd>
+							<dd class="email"><a href="" title="">info@icsciences.com</a></dd>
 
 							<dt>Connect</dt>
 							<dd class="margin-small top">
@@ -106,111 +134,57 @@
 				</div>
 			</aside>
 			<div class="col-md-9 col-md-offset-1 col-sm-9 page-content">
+				<a href="" id="one"></a>
+				<h1>Our Team</h1>
 
-						<h1>Contact Form</h1>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<div class="form-container">
-							<div class="form-group">
-								<label for="name">Name *</label>
-								<input id="name" name="name" class="form-control" type="text">
-							</div>
-							<div class="form-group">
-								<label for="company">Company / Organization *</label>
-								<input id="fname" name="company" class="form-control" type="text">
-							</div>
-							<div class="form-group">
-								<label for="address">Address *</label>
-								<input id="fname" name="address" class="form-control" type="text">
-							</div>
-							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-3">
-										<label for="city">City</label>
-										<input id="fname" name="city" class="form-control" type="text">
-									</div>
-									<div class="col-xs-2">
-										<label for="state">State </label>
-										<input id="fname" name="state" class="form-control" type="text">
-									</div>
-									<div class="col-xs-2">
-										<label for="state">Zip</label>
-										<input id="fname" name="state" class="form-control" type="text">
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-4">
-										<label for="phone">Phone</label>
-										<input id="phone" name="phone" class="form-control" type="text">
-									</div>
-									<div class="col-xs-2">
-										<label for="ext">Ext </label>
-										<input id="ext" name="state" class="form-control" type="text">
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-4">
-										<label for="phone">Fax</label>
-										<input id="phone" name="phone" class="form-control" type="text">
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="email">Email *</label>
-								<input id="fname" name="email" class="form-control half" type="text">
-								<a href="" title="">Privacy Policy</a>
-							</div>
-							<div class="form-group">
-								<label for="interest">I am Intersted In:</label>
-								<div class="row">
-									<div class="col-xs-3">
-										<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											Health-e-Net
-											</label>
-										</div>
-										<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											Health-e-Data
-											</label>
-										</div>
-									</div>
-									<div class="col-xs-3">
-										<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											Health-e-Web
-											</label>
-										</div>
-										<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											Referral Link
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="email">Comments</label>
-								<textarea class="form-control">									
-								</textarea>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary" value="Send">
-							</div>
+				<div class="row featured-item">
+					<div class="media">
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+						<div class="col-sm-9 col-xs-12">
+							<hgroup>
+								<h3>Name Goes here</h3>
+								<span class="title">Founder / CEO</span>
+							</hgroup>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div>
+					</div>
+				</div>
 
+				<div class="gallery team-gallery">
+					<div class="row ">
+						<a href="#" class="col-sm-3 col-xs-6"><img title="Test Title" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+					</div>
+
+					<div class="row ">
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+					</div>
+
+					<div class="row ">
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+
+						<a href="" title="" class="col-sm-3 col-xs-6"><img class="gallery-image" src="http://rmsjr.com/rob-astronaut.jpg" /></a>
+					</div>
+				</div>
 			</div>
 		</div>
 
-</div>
+	</div>
 
 	<!-- About -->
 	<div class="page-section about-ics reverse">
@@ -285,6 +259,7 @@ medical informatics instruments (MIIs) and systems for delivering electronic med
 			</div>
 		</div>
 	</footer>
+
 </div>
 </body>
 </html>
