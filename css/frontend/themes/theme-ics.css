@@ -666,7 +666,7 @@ h2 + h3 {
 .app-page .test-section .gs4-image {
   position: absolute;
   margin-top: 30px;
-  top: 20px;
+  top: -10px;
 }
 @media (max-width: 991px) {
   .app-page .test-section .gs4-image {
@@ -788,6 +788,9 @@ h2 + h3 {
 }
 #team .featured-item hgroup {
   margin-bottom: 10px;
+}
+.approach-image {
+  width: 200px;
 }
 .product-list .item-image > img {
   margin: auto;
@@ -1002,22 +1005,22 @@ h2 + h3 {
 .icon-google-plus {
   background-position: -520px -120px;
 }
-.app-list li {
+#home .app-list li {
   margin-top: 30px;
 }
-.app-list li:first-child {
+#home .app-list li:first-child {
   margin-top: 0;
 }
-.app-list .app-name {
+#home .app-list .app-name {
   margin-bottom: 5px;
   color: #000000;
   font-weight: bold;
 }
-.app-list .app-description {
+#home .app-list .app-description {
   font-size: 12px;
   margin-bottom: 5px;
 }
-.app-list .media-body {
+#home .app-list .media-body {
   font-size: 12px;
 }
 .intelliquest360-logo {
