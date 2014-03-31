@@ -133,6 +133,10 @@ h3 {
 .primary-nav .navbar-nav li:last-child > a {
   border-right: 0;
 }
+.primary-nav .fa {
+  font-size: 14px;
+  margin-right: 10px;
+}
 .navbar-brand,
 .navbar-brand:hover {
   color: #ffffff;
