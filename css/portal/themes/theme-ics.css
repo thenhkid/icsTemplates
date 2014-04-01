@@ -215,6 +215,14 @@ body#login {
 body {
   background-color: #efefef;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ralewaylight", helvetica, arial;
+}
 .header {
   box-shadow: 0px 2px 2px #cccccc;
   position: fixed;
@@ -394,8 +402,81 @@ body {
 .panel-title {
   font-size: 18px;
 }
+.stat-col .stat-primary {
+  font-size: 21px;
+  font-weight: bold;
+}
+.stat-col .stat-secondary {
+  font-size: 21px;
+  font-weight: normal;
+  color: #23ad00;
+}
+.panel-recent-connections .scroll-panel {
+  max-height: 200px;
+  overflow: auto;
+}
+.contact-list {
+  padding-left: 0;
+  list-style-image: none;
+  list-style: none;
+}
+.contact-list li {
+  list-style-image: none;
+}
+.dashboard-table td,
+.dashboard-table th {
+  vertical-align: middle;
+}
+.dashboard-accordion .scroll-pane {
+  max-height: 500px;
+}
+.dashboard-accordion .panel-heading {
+  padding: 0px 10px;
+  margin: 0;
+  border-bottom: 0;
+  background-color: transparent;
+}
+.dashboard-accordion .panel-heading h4 {
+  font-family: arial, helvetica, sans-serif;
+}
+.dashboard-accordion .panel-heading h4 a {
+  color: #333333;
+}
+.dashboard-accordion .panel {
+  border: 0;
+  background-color: #efefef;
+  box-shadow: 0;
+}
+.dashboard-accordion .panel-body {
+  border-top: 0 !important;
+}
 .actions-nav {
-  padding-top: 50px;
+  padding-top: 0px;
+  font-family: "ralewaylight", helvetica, arial;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+.actions-nav a {
+  color: #333333;
+}
+.actions-nav a:hover {
+  text-decoration: none;
+}
+.date-picker-dashboard .fa-calendar {
+  margin-right: 10px;
+}
+.date-picker-dashboard .fa-caret-down {
+  margin-left: 10px;
+}
+.date-picker-dashboard .fa-chevron-left {
+  margin-right: 10px;
+}
+.date-picker-dashboard .fa-chevron-right {
+  margin-left: 10px;
+}
+.date-picker-dashboard strong {
+  text-transform: uppercase;
 }
 .main {
   padding-top: 70px;
