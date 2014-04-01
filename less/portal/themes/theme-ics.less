@@ -1,0 +1,280 @@
+@import '../../bootstrap/variables.less';
+@import '../../bootstrap/mixins.less';
+@import '../varriables.less';
+@import '../mixins.less';
+@import '../theme-base.less';
+@import '../../theme-common.less';
+
+@gray-very-light : #efefef;
+@nav-text-color : #000;
+@nav-active-background-color : @gray-very-light;
+@base-nav-color : #efefef;
+@primary-link-color: #6fb5f1;
+@nav-hover-background-color:#f5f5f5;
+@sprite-common-url: '../../../img/portal/sp-common.png';
+@brand-primary: #6fb5f1;
+@headline-font-family: "ralewaylight", helvetica, arial;
+
+@color-positive : #197a00;
+@color-negative : #e23601;
+@color-neutral : #fcc801;
+
+body {
+	background-color: @gray-very-light;
+}
+
+.header {
+	box-shadow: 0px 2px 2px #cccccc;
+	position: fixed;
+	z-index: 1001;
+	width: 100%;
+}
+
+.panel-heading {
+	h1,h2,h3 {
+		font-family: @headline-font-family;
+	}
+}
+
+.primary-nav {
+
+	.navbar-brand {
+		padding-top:10px;
+		padding-bottom:10px;
+		.logo {
+			top:15px;
+			width:148px;
+		}
+	}
+
+	background-color: #fff;
+
+	.active a
+	{
+		
+	}
+
+	.navbar-nav {
+		li > a, li > a:hover, li.active > a, li.active >a:hover {
+			color:@primary-link-color
+		};
+
+		li {
+			&.active > a {
+				background-color: @white;
+				color:@gray-dark;
+
+				&:hover {
+					background-color: @white;
+					color:@gray-dark;
+				}
+			}
+
+			> a {
+				border-right:0px solid @nav-border-shadow-color;
+				border-left:0px solid @nav-border-highlight-color;
+
+				&:hover {
+					background-color: @nav-hover-background-color;
+				};
+			}
+		}
+
+		li:first-child > a {
+			border-left:0;
+		}
+
+
+		li:last-child > a {
+			border-right:0;
+		}
+	}
+
+	.indicator-active {
+		width:17px;
+		height:12px;
+		background-position: 0 0;
+		bottom:-4px;
+	}
+
+}
+
+
+.sub-nav {
+	.nav-pills {
+		a {
+			border-radius:0;
+			background-color: #a1a1a1;
+			color:@white;
+			font-family: @headline-font-family;
+			
+		}
+
+		li {
+			.active-indicator {
+				display: none;
+			}
+
+			margin-left: 20px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		li > a {
+			color:@white;
+			background-color: #a1a1a1;
+
+			&:hover {
+					background-color: #a1a1a1;
+			}
+		}
+
+		li.disabled {
+			> a {
+				background-color: #ccc;
+				color: @gray-very-light;
+			}
+		}
+
+		li.active {
+			> a, > a:hover {
+				background-color: @brand-primary;
+				color:@white;
+			}
+			.active-indicator
+			{
+				color: @brand-primary;
+			}
+			font-weight: bold;
+
+			.active-indicator {
+				&.fa {
+					font-size: 32px;
+					line-height: 11px;
+					display:block;
+					margin-top:-2px;
+					width:14px;
+					margin-right:auto;
+					margin-left:auto;
+				}
+			}
+		}
+
+
+
+	}
+}
+
+.positive {
+	color:@color-positive;
+}
+
+.negative {
+	color:@color-negative;
+}
+
+.neutral {
+	color:@color-neutral;
+}
+
+// panels
+.panel-dashboard {
+	box-shadow: 0px 2px 0px #ccc;
+
+	.panel-heading {
+		padding-bottom: 0;
+	}
+
+	&.panel-stats {
+		.stats {
+			text-align: center;
+			padding:15px 0px 0 0px;
+		}
+
+		.stat-primary {
+			font-size: 48px;
+			font-weight: bold;
+			display: block;
+			line-height: 100%;
+		}
+
+		.stat-secondary {
+			font-size:24px;
+			&.positive {
+				color:lighten(@color-positive, 10%);
+			}
+
+			&.negative {
+				color:lighten(@color-negative, 10%);
+			}
+
+			&.neutral {
+				color:lighten(@color-neutral, 10%);
+			}
+		}
+	}
+
+	.panel-footer {
+		box-sizing:border-box;
+
+		.fa {
+			vertical-align: middle;
+		}
+
+		background-color: @white;
+
+		a.action-link {
+			color:#ccc;
+			&:hover {
+				text-decoration: none;
+				color: #666;
+			}
+			width:33%;
+			padding:0;
+			margin:0;
+			float:left;
+			text-align: center;
+			box-sizing:border-box;
+		}
+
+		a.expand-panel {
+			font-size: 18px;
+			color:#333;
+			&:hover {
+				color:#000;
+			}
+		}
+
+		a.close-panel {
+			text-align: left;
+		}
+
+		a.get-details {
+			text-align: right;
+		}
+
+	}
+}
+
+.panel-graph {
+	width:100%;
+	height:200px;
+	background-color: #666;
+}
+
+.panel-title {
+	font-size: 18px;
+}
+
+.actions-nav {
+	padding-top:50px;
+}
+
+.main {
+	padding-top:70px;
+}
+
+
+

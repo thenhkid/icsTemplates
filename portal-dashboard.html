@@ -11,10 +11,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- main css compiled from main.less -->
-<link rel="stylesheet" href="css/admin/main.css?v=a3">
+<link rel="stylesheet" href="css/portal/main.css?v=a3">
 
 <!-- default theme -->
-<link rel="stylesheet" href="css/themes/theme-default.css">
+<link rel="stylesheet" href="css/portal/themes/theme-ics.css">
 
 <!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/admin/ie.css">
@@ -22,7 +22,7 @@
 
 <!-- moderizer: for ie8 compatibility -->
 <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<script data-main="js/admin/main" src="js/vendor/require.js"></script>
+<script data-main="js/portal/main" src="js/vendor/require.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -36,6 +36,7 @@
 			<nav class="navbar primary-nav" role="navigation">
 				<div class="navbar-header">
 					<a href="" class="navbar-brand" title="{company name}">
+						<img src="img/portal/img-icsciences-logo.png" class="logo" alt="I.C. Sciences Logo"/>
 					<!--
 						<img src="img/health-e-link/img-health-e-link-logo.png" class="logo" alt="Health-e-Link Logo"/>
 						Required logo specs:
@@ -50,20 +51,20 @@
 					</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="" title="Organizations">Organizations</a><span class="indicator-active arrow-up"></span></li>
-					<li><a href="" title="Configurations">Configurations</a></li>
-					<li><a href="" title="Message Type Library">Message Type Library</a></li>
-					<li><a href="" title="Scheduler">Scheduler</a></li>
+					<li class="active"><a href="" title="Dashboard"><i class="fa fa-tachometer"></i> Dashboard</a><span class="indicator-active arrow-up"></span></li>
+					<li><a href="" title="My Logs"> <i class="fa fa-book"></i>My Logs</a></li>
+					<li><a href="" title="My Medications"> <i class="fa fa-medkit"></i>My Medications</a></li>
+					<li><a href="" title="My Health Circle"> <i class="fa fa-users"></i>My Health Circle</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="secondary-nav">
-					<li><a href="" title="Log out">Log out</a></li>
+					<li><a href="" title="Log out"><i class="fa fa-gear"></i> Account</a></li>
 				</ul>
 			</nav>
 		<!-- // End Primary Nav -->
 	</header>
 	<!-- End Header -->
 
-	<!-- Actions Nav -->
+	<!-- Actions Nav
 	<nav class="navbar navbar-default actions-nav" role="navigation">
 		<div class="navbar-header">
 			<h1 class="section-title navbar-brand"><a href="" title="Section Title" class="unstyled-link">Section Title</a></h1>
@@ -79,78 +80,54 @@
 
 	<div class="container-fluid">
 		<div class="row-fluid">
+			<div class="main clearfix full-width" role="main">
 
-			<!-- Secondary Nav -->
-			<aside class="secondary">
-				<nav class="secondary-nav" role="navigation">
-					<ul class="nav nav-pills nav-stacked">
-						<li>
-							<a href="">Edit Organization</a>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="" title="Details">Details</a></li>
-								<li class="active"><a href="" title="Configurations">Configurations</a></li>
-								<li><a href="" title="Providers">Providers</a></li>
-								<li><a href="" title="System Users">System Users</a></li>
-								<li><a href="" title="Brochures">Brochures</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="" title="Organization Subnav">Sub Navigation One</a>
-							<ul class="nav nav-pills nav-stacked">
-								<li class="active"><a href="" title=""><strong>Step 1:</strong><br/>Details</a></li>
-								<li><a href="?configurations-choose-fields" title=""><strong>Step 2:</strong><br/>Field Mappings</a></li>
-								<li><a href="" title=""><strong>Step 3:</strong><br/>Data Translations</a></li>
-								<li><a href="" title=""><strong>Step 4:</strong><br/>Connections</a></li>
-								<li><a href="" title=""><strong>Step 5:</strong><br/>Scheduling</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="" title="Organization Subnav">Sub Navigation Two</a>
-						</li>
-					</ul>
-				</nav>
-			</aside>
-			<!-- // End Secondary Nav -->
+			<div class="row-fluid">
+				<div class="col-md-12">
+					<!-- Subnav (if needed) -->
+					<nav class="sub-nav" role="navigation">
+						<ul class="nav nav-pills" >
+							<li class="active">
+								<a href="" title="">
+									Blood Pressure
+								</a>
+								<i class="active-indicator fa fa-caret-down"></i>
+							</li>
+							<li>
+								<a href="" title="">
+									Weight
+								</a>
+								<i class="active-indicator fa fa-caret-down"></i>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 
 
-			<div class="main clearfix" role="main">
+			<div class="row-fluid basic-clearfix">
+				<div class="col-md-3">
+					<section class="panel panel-dashboard panel-stats panel-bp">
+						<div class="panel-heading">
+							<h3 class="panel-title">Blood Pressure</h3>
+						</div>
+						<div class="panel-body">
+							<div class="panel-graph"></div>
+							<div class="stats">
+								<span class="stat-primary positive">97/75</span>
+								<span class="stat-secondary positive">92 BPM</span>
+							</div>
+						</div>
+						<div class="panel-footer basic-clearfix">
+							<a href="" title="" class="action-link center-text fa fa-times close-panel"></a>
+							<a href="" title="" class="action-link center-text fa fa-search expand-panel"></a>
+							<a href="" class="action-link center-text fa fa-arrow-right get-details"></a>
+						</div>
+					</section>
+				</div>
+			</div>
 
-				<!-- Subnav (if needed) -->
-				<nav class="sub-nav" role="navigation">
-					<ul class="nav nav-pills" >
-						<li class="active">
-							<a href="" title="">
-								<span class="badge">1</span>
-								Details
-							</a>
-						</li>
-						<li>
-							<a href="" title="">
-								<span class="badge">2</span>
-								Field Mappings
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">3</span>
-								Data Translations
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">4</span>
-								Connections
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">5</span>
-								Scheduling
-							</a>
-						</li>
-					</ul>
-				</nav>
-
+			<div class="row-fluid">
 				<div class="col-md-12">
 
 					<div class="alert alert-success"><strong>Success!</strong> New User Added!</div>
