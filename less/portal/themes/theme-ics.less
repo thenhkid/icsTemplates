@@ -23,6 +23,10 @@ body {
 	background-color: @gray-very-light;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headline-font-family;
+}
+
 .header {
 	box-shadow: 0px 2px 2px #cccccc;
 	position: fixed;
@@ -268,8 +272,112 @@ body {
 	font-size: 18px;
 }
 
+.stat-col {
+	.stat-primary {
+		font-size: 21px;
+		font-weight: bold;
+	}
+
+	.stat-secondary {
+		font-size: 21px;
+		font-weight: normal;
+		color:lighten(@color-positive, 10%)
+	}
+}
+
+.panel-recent-connections {
+	.scroll-panel {
+		max-height: 200px;
+		overflow: auto;
+	}
+}
+
+.contact-list {
+	padding-left: 0;
+	list-style-image: none;
+	list-style: none;
+
+	li {
+		list-style-image: none;
+	}
+}
+
+.dashboard-table {
+	td, th {
+		vertical-align: middle;
+	}
+}
+
+.dashboard-accordion {
+
+	.scroll-pane {
+		max-height: 500px;
+	}
+
+	.panel-heading {
+		padding:0px 10px;
+		margin:0;
+		border-bottom:0;
+		background-color: transparent;
+
+		h4 {
+			font-family: arial,helvetica,sans-serif;
+			a {
+				color:@gray-dark;
+			}
+		}
+	}
+
+	.panel {
+		border:0;
+		background-color: @gray-very-light;
+		box-shadow: 0;
+	}
+
+	.panel-body {
+		border-top:0 !important;
+	}
+
+}
+
+.panel-table {
+
+}
+
 .actions-nav {
-	padding-top:50px;
+	padding-top:0px;
+	font-family: @headline-font-family;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: transparent;
+
+	a {
+		color:@gray-dark;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.date-picker-dashboard {
+	.fa-calendar {
+		margin-right:10px;
+	}
+	.fa-caret-down {
+		margin-left:10px;
+	}
+
+	.fa-chevron-left {
+		margin-right: 10px;
+	}
+
+	.fa-chevron-right {
+		margin-left: 10px;
+	}
+
+	strong {
+		text-transform: uppercase;
+	}
 }
 
 .main {

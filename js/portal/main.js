@@ -3,7 +3,6 @@ require.config({
 	paths: {
 		'jquery' : '../vendor/jquery-1.10.1.min',
 		'bootstrap' : '../vendor/bootstrap.min',
-		'templating' : 'templating'
 	},
 	shim: {
 		'bootstrap': ['jquery'],
@@ -11,9 +10,6 @@ require.config({
 });
 
 require(['jquery', 'templating', 'bootstrap'], function ($, templating) {
-
-	var templatingEngine = new templating();
-	templatingEngine.init();
 
 });
 
