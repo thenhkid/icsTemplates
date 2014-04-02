@@ -53,11 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	background-color: #fff;
 
-	.active a
-	{
-		
-	}
-
 	.navbar-nav {
 		li > a, li > a:hover, li.active > a, li.active >a:hover {
 			color:@primary-link-color
@@ -101,6 +96,11 @@ h1, h2, h3, h4, h5, h6 {
 		bottom:-4px;
 	}
 
+	@media (max-width: @screen-sm-max) {
+		li.active .indicator-active {
+			display: none;
+		}
+	}
 }
 
 
@@ -285,6 +285,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.scroll-panel {
+	overflow: auto;
+}
+
 .panel-recent-connections {
 	.scroll-panel {
 		max-height: 200px;
@@ -382,6 +386,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
 	padding-top:70px;
+}
+
+#dashboard-freewall {
+	margin:15px;
+	margin-top:0;
+	.item {
+		padding:0;
+		width:320px;
+		float:left;
+	}
 }
 
 

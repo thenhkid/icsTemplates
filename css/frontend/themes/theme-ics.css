@@ -177,6 +177,9 @@ body#login {
   font-weight: normal;
   font-style: normal;
 }
+.icon-bar {
+  background-color: #000;
+}
 body {
   color: #666666;
   line-height: 1.714;
