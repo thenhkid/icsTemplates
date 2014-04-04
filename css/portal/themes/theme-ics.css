@@ -408,7 +408,13 @@ h6 {
 .panel-graph {
   width: 100%;
   height: 200px;
-  background-color: #666;
+  background-color: #ffffff;
+}
+.graph-low {
+  background-color: #dff0d8;
+}
+.graph-high {
+  background-color: #f2dede;
 }
 .panel-title {
   font-size: 18px;
@@ -420,7 +426,7 @@ h6 {
 .stat-col .stat-secondary {
   font-size: 21px;
   font-weight: normal;
-  color: #23ad00;
+  color: #1a1a1a;
 }
 .scroll-panel {
   overflow: auto;

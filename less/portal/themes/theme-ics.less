@@ -19,6 +19,9 @@
 @color-negative : #e23601;
 @color-neutral : #fcc801;
 
+@graph-low-color : @alert-success-bg;
+@graph-high-color : @alert-danger-bg;
+
 body {
 	background-color: @gray-very-light;
 }
@@ -265,7 +268,15 @@ h1, h2, h3, h4, h5, h6 {
 .panel-graph {
 	width:100%;
 	height:200px;
-	background-color: #666;
+	background-color: @white;
+}
+
+.graph-low {
+	background-color: @graph-low-color
+}
+
+.graph-high{
+	background-color: @graph-high-color
 }
 
 .panel-title {
@@ -281,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 	.stat-secondary {
 		font-size: 21px;
 		font-weight: normal;
-		color:lighten(@color-positive, 10%)
+		color:lighten(#000, 10%)
 	}
 }
 
