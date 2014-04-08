@@ -15,25 +15,6 @@ require.config({
 
 require(['jquery', 'page-scripts', 'bootstrap', 'freewall'], function ($, PageScripts) {
 
-// adjust favorite foors height //
-var favoriteFoodsPanel = $('.panel-favorite-foods');
-var favortieFoodsScrollPanel = favoriteFoodsPanel.find('.scroll-panel');
-var favoriteFoodsPanelBody = favoriteFoodsPanel.find('.panel-body');
-favortieFoodsScrollPanel.height(favoriteFoodsPanelBody.outerHeight())
-
-// set up freewall
-var wall = new freewall("#dashboard-freewall");
-wall.reset({
-	selector: '.item',
-	animate: true,
-	cellW: 320,
-	cellH: 'auto',
-	onResize: function() {
-		wall.fitWidth();
-	}
-});
-wall.fitWidth();
-
 // run page scripts
 var pageId = $('body').attr('id');
 if (typeof PageScripts[pageId] === 'function')

@@ -11,7 +11,7 @@ html, body {
 }
 
 .main {
-	margin-left:160px;
+	margin-left:240px;
 
 	// fixes issue with floated sidebar.
 	// not sure what the cause is 
@@ -21,6 +21,10 @@ html, body {
 
 	&.full-width {
 		margin-left:0;
+	}
+
+	@media (max-width: @screen-sm-max) {
+		margin-left:0px;
 	}
 }
 
@@ -154,7 +158,7 @@ html, body {
 
 // secondary, stacked nav
 .secondary {
-	width:160px;
+	width:240px;
 	float:left;
 	height: 100%;
 	position: relative;
