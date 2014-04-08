@@ -89,6 +89,18 @@
 
 	<div class="container-fluid">
 		<div class="row-fluid">
+
+			<aside id="dashboard-sidepanel" class="secondary side-panel col-sm-3 col-md-2 col-xs-12">
+				<a href="#" title="" class="close-side-panel fa fa-times"></a>
+				<ul class="no-style tile-list">
+					<li><label><input type="checkbox" /> Tile #1</label></li>
+					<li><label><input type="checkbox" /> Tile #1</label></li>
+					<li><label><input type="checkbox" /> Tile #1</label></li>
+					<li><label><input type="checkbox" /> Tile #1</label></li>
+				</ul>
+				<button class="btn btn-secondary" >Add Selected Tiles</button>
+			</aside>
+
 			<div class="main clearfix full-width" role="main">
 
 			<div class="row-fluid">
@@ -101,7 +113,7 @@
 							<a href=""><strong class="relative-day-name">Today:</strong> <span class="full-date">January 31st </span></a>
 							<a href="" class="next-day fa fa-chevron-right"></a>
 						</div>
-						<a href="" title="" class="fa fa-plus pull-right"></a>
+						<a href="#dashboard-sidepanel" title="" class="fa fa-plus pull-right" data-toggle="sidepanel"></a>
 					</nav>
 				</div>
 			</div>
@@ -128,7 +140,7 @@
 					</section>
 				</div>
 
-								<div class="col-md-3 item">
+				<div class="col-md-3 item">
 					<section class="panel panel-dashboard panel-stats panel-bp">
 						<div class="panel-heading">
 							<h3 class="panel-title">Blood Pressure</h3>
@@ -148,7 +160,7 @@
 					</section>
 				</div>
 
-								<div class="col-md-3 item">
+				<div class="col-md-3 item">
 					<section class="panel panel-dashboard panel-stats panel-bp">
 						<div class="panel-heading">
 							<h3 class="panel-title">Blood Pressure</h3>

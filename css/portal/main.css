@@ -7254,7 +7254,7 @@ body {
   width: 100%;
 }
 .main {
-  margin-left: 160px;
+  margin-left: 240px;
 }
 .main .panel-body:before,
 .main .panel-body:after {
@@ -7262,6 +7262,11 @@ body {
 }
 .main.full-width {
   margin-left: 0;
+}
+@media (max-width: 991px) {
+  .main {
+    margin-left: 0px;
+  }
 }
 .contain {
   /*
@@ -7352,7 +7357,7 @@ body {
   padding-bottom: 4px;
 }
 .secondary {
-  width: 160px;
+  width: 240px;
   float: left;
   height: 100%;
   position: relative;

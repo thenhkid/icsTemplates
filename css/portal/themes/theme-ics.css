@@ -510,3 +510,43 @@ h6 {
   width: 320px;
   float: left;
 }
+.side-panel {
+  -webkit-transition: left .5s;
+  transition: left .5s;
+  box-sizing: border-box;
+  min-height: 100%;
+  left: 0;
+  top: 50px;
+  background-color: #ff0000;
+  display: none;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  background-color: #333;
+  font-size: 14px;
+  line-height: 21px;
+}
+.side-panel .fa-times {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.side-panel .tile-list {
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .side-panel {
+    width: 100%;
+  }
+  .secondary {
+    float: none !important;
+    width: 100% !important;
+  }
+}
+ul.no-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
