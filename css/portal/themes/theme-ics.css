@@ -550,3 +550,57 @@ ul.no-style {
   padding: 0;
   margin: 0;
 }
+.graph-container {
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.graph-range {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.lownormalBP {
+  background-color: #2E8B57;
+  z-index: 5;
+  width: 16%;
+  height: 16%;
+}
+.normalBP {
+  background-color: #9ACD32;
+  z-index: 4;
+  width: 33%;
+  height: 33%;
+}
+.highnormalBP {
+  background-color: #FFD700;
+  z-index: 3;
+  width: 49%;
+  height: 49%;
+}
+.mildHyperBP {
+  background-color: #FF4500;
+  z-index: 2;
+  width: 66%;
+  height: 66%;
+}
+.modHyperBP {
+  background-color: #FF0000;
+  width: 83%;
+  height: 83%;
+  z-index: 1;
+}
+.severeHyperBP {
+  background-color: #B22222;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
