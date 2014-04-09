@@ -409,6 +409,7 @@ h6 {
   width: 100%;
   height: 200px;
   background-color: #ffffff;
+  position: relative;
 }
 .graph-low {
   background-color: #dff0d8;
@@ -603,4 +604,12 @@ ul.no-style {
   bottom: 0;
   left: 0;
   z-index: 0;
+}
+.bg-bp-graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
