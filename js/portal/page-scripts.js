@@ -13,22 +13,37 @@ define(['jquery', 'date-display', 'date-display', 'side-panel'], function ($) {
 			var favoriteFoodsPanelBody = favoriteFoodsPanel.find('.panel-body');
 			favortieFoodsScrollPanel.height(favoriteFoodsPanelBody.outerHeight())
 
-			// set up freewall
-			var wall = new freewall("#dashboard-freewall");
-				wall.reset({
-				selector: '.item',
-				animate: true,
-				cellW: 320,
-				cellH: 'auto',
-				onResize: function() {
+			// FREEWALL
+			/* set up freewall
+				var wall = new freewall("#dashboard-freewall");
+					wall.reset({
+					selector: '.item',
+					animate: true,
+					cellW: 320,
+					cellH: 'auto',
+					onResize: function() {
+						wall.fitWidth();
+					}
+				});
+				wall.fitWidth();
+
+				// on side panel show and hide, readjust the freewall
+				$(document).on('show.ics.sidepanel hide.ics.sidepanel', function () {
 					wall.fitWidth();
+				});
+			*/
+
+			//SHAPESHIFT
+			$("#dashboard-shapeshift").shapeshift(
+				{
+					minColumns: 3,
+					columns:null
 				}
-			});
-			wall.fitWidth();
+			);
 
 			// on side panel show and hide, readjust the freewall
 			$(document).on('show.ics.sidepanel hide.ics.sidepanel', function () {
-				wall.fitWidth();
+				$("#dashboard-shapeshift").trigger("ss-rearrange")
 			});
 
 

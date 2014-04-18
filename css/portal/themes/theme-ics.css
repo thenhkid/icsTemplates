@@ -502,14 +502,28 @@ h6 {
 .main {
   padding-top: 70px;
 }
+/*
 #dashboard-freewall {
-  margin: 15px;
-  margin-top: 0;
+	margin:15px;
+	margin-top:0;
+	.item {
+		padding:0;
+		width:320px;
+		float:left;
+	}
 }
-#dashboard-freewall .item {
-  padding: 0;
+*/
+#dashboard-shapeshift {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+#dashboard-shapeshift .item {
+  width: 80px;
+  position: absolute;
+}
+#dashboard-shapeshift .item[data-ss-colspan="3"] {
   width: 320px;
-  float: left;
 }
 .side-panel {
   -webkit-transition: left .5s;
