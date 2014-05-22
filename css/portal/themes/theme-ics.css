@@ -499,8 +499,44 @@ h6 {
 .date-picker-dashboard strong {
   text-transform: uppercase;
 }
-.main {
+.main,
+.secondary {
   padding-top: 70px;
+}
+.secondary .sidebar-icon {
+  font-size: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.secondary-nav .nav > li > a {
+  border-radius: 0;
+  color: #333333;
+  font-weight: bold;
+}
+.secondary-nav .nav > li > a:hover {
+  background-color: #fff;
+}
+.secondary-nav .nav li ul li a {
+  color: #6fb5f1;
+  font-weight: normal;
+  border-bottom: 0;
+}
+.secondary-nav .nav li.active a {
+  color: #ffffff;
+  background-image: none;
+  background-color: #6fb5f1;
+}
+.secondary-nav .nav .badge {
+  background-color: #333333;
+}
+.secondary-nav .nav .disabled a {
+  color: #999999;
+}
+.secondary-nav .nav .disabled .badge {
+  background-color: #cccccc;
+}
+.secondary-nav .nav .complete .badge {
+  background-color: #009900;
 }
 /*
 #dashboard-freewall {
